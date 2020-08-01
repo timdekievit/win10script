@@ -35,6 +35,12 @@ $tweaks = @(
 	"Install7Zip",
 	"InstallNotepadplusplus",
 	"InstallMediaPlayerClassic",
+	"InstallDiscord",
+	"InstallSteam",
+	"InstallGogGalaxy",
+	"InstallMsiAfterburner",
+	"InstallNvidiaInspector",
+	"InstallBrave",
 
 	### Windows Apps
 	"DebloatAll",
@@ -224,6 +230,36 @@ Function InstallNotepadplusplus {
 Function InstallMediaPlayerClassic {
 	Write-Output "Installing Media Player Classic (VLC Alternative)"
 	choco install mpc-hc -y
+}
+
+Function InstallBrave {
+	Write-Output "Installing brave"
+	choco install brave -y
+}
+
+Function InstallSteam {
+	Write-Output "Installing steam"
+	choco install steam -y
+}
+
+Function InstallGogGalaxy {
+	Write-Output "Installing gog galaxy"
+	choco install goggalaxy -y
+}
+
+Function InstallNvidiaInspector {
+	Write-Output "Installing nvidia inspector"
+	choco install nvidia-profile-inspector -y
+}
+
+Function InstallMsiAfterburner {
+	Write-Output "Installing msi afterburner"
+	choco install msiafterburner -y
+}
+
+Function InstallDiscord {
+	Write-Output "Installing Discord"
+	choco install discord -y
 }
 
 ##########
@@ -2565,10 +2601,10 @@ Function DebloatAll {
         #Optional: Typically not removed but you can if you need to for some reason
         #"*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
         #"*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"
-        #"*Microsoft.BingWeather*"
-        #"*Microsoft.MSPaint*"
-        #"*Microsoft.MicrosoftStickyNotes*"
-        #"*Microsoft.Windows.Photos*"
+        "*Microsoft.BingWeather*"
+        "*Microsoft.MSPaint*"
+        "*Microsoft.MicrosoftStickyNotes*"
+        "*Microsoft.Windows.Photos*"
         #"*Microsoft.WindowsCalculator*"
         #"*Microsoft.WindowsStore*"
     )
